@@ -89,7 +89,7 @@ UserInputService.InputEnded:Connect(function(Input, IsTyping)
     if shared.config.mode == 'Hold' and Input.KeyCode == shared.config.keybind and shared.config.notifications then
         game:GetService("StarterGui"):SetCore("SendNotification",{
             Title = "zins private",
-            Text = 'X Not holding.',
+            Text = '❌ Not holding.',
         })
     end
 end)
